@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, NavDropdown, Container, Form } from 'react-bootstrap';
 import  './navbar.css'; // Importing the updated CSS
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logo.jpg'; // Import the logo image
+import logo from '/assets/logo.jpg'; // Import the logo image
 
 const NavBar = () => {
   const [profileImage, setProfileImage] = useState(null);

@@ -12,15 +12,17 @@ const HeroSection = () => {
         data-bs-ride="carousel"
         data-bs-interval="3000"
       >
+
+
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="/src/assets/hero1.jpeg" className="d-block w-100 hero-image" alt="Hero 1" />
+          <img src="/assets/hero1.jpeg" className="d-block w-100 hero-image" alt="Hero 1" />
           </div>
           <div className="carousel-item">
-            <img src="/src/assets/hero2.jpg" className="d-block w-100 hero-image" alt="Hero 2" />
+          <img src="/assets/hero2.jpg" className="d-block w-100 hero-image" alt="Hero 2" />
           </div>
           <div className="carousel-item">
-            <img src="/src/assets/hero3.jpg" className="d-block w-100 hero-image" alt="Hero 3" />
+          <img src="/assets/hero3.jpg" className="d-block w-100 hero-image" alt="Hero 3" />
           </div>
         </div>
 
