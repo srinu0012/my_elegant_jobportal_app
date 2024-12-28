@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, Button, Modal } from "react-bootstrap";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useNavigate } from "react-router-dom"; // Import useNavigate hook
-import "./jobList.css";
+import "./JobList.css";
 import {
   MdOutlineSell,
   MdGroups,
