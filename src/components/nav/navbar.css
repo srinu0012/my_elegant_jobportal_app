@@ -1,0 +1,118 @@
+/* Navbar Styles */
+.navbar.custom-navbar {
+  background-color: #461e9d !important; /* New slate gray background color */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15) !important; /* Subtle shadow */
+  position: sticky !important; /* Make the navbar sticky */
+  top: 0 !important; /* Stick to the top */
+  z-index: 1000 !important; /* Ensure navbar stays on top */
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out !important;
+  padding: 0.5rem 1rem !important; /* Reduced navbar height */
+}
+
+.navbar-white {
+  background-color: #f8f9fa !important; /* Light gray background when scrolling */
+  color: #333333 !important; /* Dark gray text for contrast */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow */
+}
+
+/* Brand Text */
+.navbar-brand.brand-text {
+  color: #ffffff !important; /* White text for brand */
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+}
+
+.navbar-white .navbar-brand.brand-text {
+  color: #333333 !important; /* Dark gray text on white navbar */
+}
+
+/* Navbar Links */
+.nav-link.nav-link-custom {
+  color: #ffffff !important; /* White text for links */
+  margin-left: 1rem !important;
+  font-size: 0.9rem !important; /* Slightly smaller font size */
+  transition: all 0.3s ease-in-out !important;
+}
+
+.navbar-white .nav-link.nav-link-custom {
+  color: #333333 !important; /* Dark gray text on white navbar */
+}
+
+/* Hover Effect */
+.nav-link.nav-link-custom:hover {
+  color: #ffa500 !important; /* Orange hover effect */
+  text-decoration: underline !important;
+  animation: hoverBounce 0.5s ease-in-out;
+}
+
+.navbar-white .nav-link.nav-link-custom:hover {
+  color: #ffa500 !important; /* Orange hover effect on white navbar */
+}
+
+/* Profile Dropdown Styles */
+.profile-dropdown {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  width: 35px !important; /* Reduced size for profile dropdown */
+  height: 35px !important;
+  background-color: #e0e0e0 !important; /* Light gray background */
+  overflow: hidden !important;
+  cursor: pointer !important;
+}
+
+.profile-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.placeholder-icon {
+  color: #708090 !important; /* Slate gray placeholder icon color */
+  font-size: 1rem !important;
+  font-weight: bold !important;
+}
+
+/* Menu Icon Style */
+.navbar-toggler-icon {
+  background-color: #ffffff !important; /* White menu icon */
+  transition: transform 0.3s ease, background-color 0.3s ease !important;
+}
+
+/* Menu Icon Click Animation */
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  transform: rotate(90deg) !important; /* Rotate icon when clicked */
+  background-color: #ffa500 !important; /* Orange color on click */
+}
+
+/* Keyframe for Hover Animation */
+@keyframes hoverBounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Logo Styling */
+.navbar-logo {
+  width: 35px; /* Slightly smaller logo size */
+  height: 35px;
+  object-fit: contain;
+}
+
+/* Responsive Title */
+.navbar-brand.brand-text {
+  font-size: 1.3rem !important; /* Reduced font size for brand text */
+}
+
+@media (max-width: 768px) {
+  .navbar-brand.brand-text {
+    font-size: 1rem !important; /* Reduce title size on smaller screens */
+  }
+}

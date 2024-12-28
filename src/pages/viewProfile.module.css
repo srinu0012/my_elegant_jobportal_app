@@ -1,0 +1,143 @@
+/* Main container */
+.profileContainer {
+  background: linear-gradient(135deg, #2d3b55, #4c6a92); 
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 900px;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styling */
+.header {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #f0f4f8;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Form Input */
+.formLabel {
+  font-size: 1.3rem;
+  color: #f0f4f8;
+  font-weight: 600;
+}
+
+.formInput {
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  width: 100%;
+  max-width: 450px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formInput:focus {
+  border-color: #4c6a92;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 106, 146, 0.5);
+}
+
+/* Button Styling */
+.formButton {
+  padding: 12px;
+  background-color: #4c6a92; 
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.formButton:hover {
+  background-color: #3a5681; 
+  transform: translateY(-2px);
+}
+
+/* Error Message */
+.error {
+  color: #ff4d4d;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Profile Box Styling */
+.profileBox {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+}
+
+.profileDetail {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.profileDetail:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-weight: bold;
+  color: #4c6a92; 
+  font-size: 1.2rem;
+}
+
+.value {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Education Section */
+.education {
+  margin-top: 20px;
+}
+
+.educationItem {
+  margin-bottom: 15px;
+}
+
+.educationItem h3 {
+  font-size: 1.3rem;
+  color: #4c6a92;
+}
+
+.educationItem p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profileContainer {
+    padding: 20px;
+  }
+
+  .profileBox {
+    padding: 20px;
+  }
+
+  .profileDetail {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profileDetail .label {
+    font-size: 1.1rem;
+  }
+
+  .profileDetail .value {
+    font-size: 1.1rem;
+  }
+}
